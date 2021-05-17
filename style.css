@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*************UVODNA OBRAZOVKA*************/
+#enter {
+    background: url(images/background1.jpg);    
+    height: 100vh;
+    background-attachment: fixed;
+/*    display: none;*/
+}
+
+h1 {
+    text-align: center;
+    color: #ffe08d;
+    font-family: 'Lobster', cursive;
+    font-size: 600%;
+    padding-top: 30px;
+    text-shadow: 5px 5px 4px #363B4F;
+}
+
+
+/*************PRIHLASOVANIE A REGISTROVANIE*************/
+
+.regButton {
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    text-align: center;
+    color: #ffe08d;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1.5px;
+    font-size: 40px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.regButton:hover {
+    transition: 0.3s;
+    border-bottom: 2px solid #ffe08d;
+}
+
+.enterButton {
+    position: absolute;
+    top: 40%;
+    right: 7%;
+    text-align: center;
+    color: #ffe08d;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1.5px;
+    font-size: 40px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.enterButton:hover {
+    transition: 0.3s;
+    border-bottom: 2px solid #ffe08d;
+}
+
+#enterForm {
+    position: absolute;
+    top: 40%;
+    right: 4%;
+    text-align: center;
+    display: none;
+}
+
+#enterForm h2 {
+    color: #ffe08d;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+#enterForm input {
+    margin-bottom: 5px;
+    border: 2px solid #152743;
+    background: #152743;
+    text-align: center;
+    padding: 5px;
+    width: 300px;
+    color: #fff;
+    border-radius: 15px;
+}
+
+#enterForm input[type="submit"] {
+    width: 100px;
+    cursor: pointer;
+}
+
+#enterForm input[type="submit"]:hover {
+    transition: 0.3s;
+    background: #ffe08d;
+    color: #152743;
+    font-weight: bold;
+}
+
+/**********REGISTRACNA OBRAZOVKA***********/
+
+#registration {
+    background: url(images/background1.jpg);    
+    height: 100vh;
+    display: none;
+}
+
+#regText {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    max-width: 70%;
+    max-height: 75%;
+    background: rgba(21, 39, 67, 0.83);
+    border-radius: 15px;
+    overflow: scroll;
+}
+
+#regText nav {
+    text-align: center;
+    width: 68.5%;
+    height: 100px;
+    position: fixed;
+    background: rgba(255, 224, 141, 0.63);
+    border-radius: 15px;
+    border-bottom: 2px solid #152743;
+    box-shadow: 2px 2px 2px #000;
+}
+
+#cross {
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+    border: 2px solid #152743;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 3px;
+    background: #152743;
+    border-radius: 15px;
+}
+
+#cross:hover {
+    transition: 0.3s;
+    background: #ffe08d;
+    color: #152743;
+}
+
+#regText nav ul {
+    position: fixed;
+    left: 40%;
+}
+
+
+#regText nav ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 40px;
+    margin: 10px;
+    cursor: pointer;
+    color: #363B4F;
+    text-shadow: 2px 2px 2px #000;    
+}
+
+#regText nav ul li:hover {
+    transition: 0.3s;
+    color: #ffe08d;
+}
+
+#regText nav ul .active {
+    color: #ffe08d;
+}
+
+#regText h2 {
+    color: #ffe08d;
+    margin-left: 30px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+#regText h2:after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid #000;
+    width: 300px;
+    margin: 10px 0;
+}
+
+#regText h3 {
+    margin-left: 30px;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px #000;
+    color: #ff9a8d;
+}
+
+#regText p {
+    color: #f7edd5;
+    font-weight: bold;
+    text-align: justify;
+    margin: 5px 30px;
+    text-shadow: 2px 2px 2px #000;
+    line-height: 20px;
+}
+
+#regText a:link,
+#regText a:visited {
+    text-decoration: none;
+    color: #ff9a8d;
+    border-bottom: 2px solid transparent;
+}
+
+#regText a:hover,
+#regText a:active {
+    transition: 0.3s;
+    border-bottom: 2px solid #ff9a8d;
+}
+
+#regText form {
+    text-align: center;
+    max-width: 600px;
+    margin: 10px auto;
+    color: #ffe08d;
+}
+
+#regText form input {
+    margin-top: 10px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.f1 {
+    width: 80%;
+    text-align: center;
+    padding: 7px;
+    margin-top: 10px;
+    background: #363B4F;
+    border-radius: 15px;
+    color: #ffe08d;
+}
+
+#regText form .lab {
+    text-shadow: 2px 2px 2px #000;
+}
+
+::placeholder {
+    color: rgba(255, 224, 141, 0.72);
+}
+
+#regText form input[type="submit"] {
+    width: 30%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#regText form input[type="submit"]:hover {
+    transition: 0.3s;
+    background: #ffe08d;
+    color: #9E643C;
+    cursor: pointer;
+}
+
+.emptySpace {
+    width: 100%;
+    height: 100px;
+}
