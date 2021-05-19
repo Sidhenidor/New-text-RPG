@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+ 
+<!--*************UVODNA OBRAZOVKA*************-->
+    <div id="enter">
+        <h1>Izar Ataras</h1>
+        
+        <p class="regButton">Registrovať sa</p>
+
+        <p class="enterButton">Prihlásiť sa</p>
+      
+        <form id="enterForm" action="">
+            <h2>Prihlásiť sa</h2>
+            <input type="text" placeholder="prihlasovacie meno"><br>
+            <input type="password" placeholder="heslo"><br>
+            <input type="submit" value="Prihlásiť sa">
+        </form>
+    </div>
+  
+   <script src="script.js">
+    //*************UVODNA OBRAZOVKA***********//
+document.querySelector(".enterButton").addEventListener("click", function(){
+    document.querySelector(".enterButton").style.display = "none";
+    document.querySelector("#enterForm").style.display = "block";
+});
+
+document.querySelector("#enterForm").addEventListener("click", function(){
+    document.querySelector("#enterForm").style.display = "none";
+    document.querySelector(".enterButton").style.display = "block";
+});
+
+
+document.querySelector(".regButton").addEventListener("click", function(){
+    document.querySelector("#enter").style.display = "none";
+    document.querySelector("#registration").style.display = "block";
+});
+  </script> 
+  
+</body>
+   
+    
+</html>
